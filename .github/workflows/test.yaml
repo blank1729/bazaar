@@ -15,6 +15,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - run: npm install -g pnpm
+      - run: curl -fsSL https://get.pnpm.io/install.sh | sh -
       - run: pnpm install
       - run: pnpm test
