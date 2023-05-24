@@ -16,5 +16,6 @@ jobs:
         with:
           node-version: 14
       - run: curl -fsSL https://get.pnpm.io/install.sh | bash -
+      - run: source /home/runner/.bashrc
       - run: pnpm install
       - run: pnpm test
